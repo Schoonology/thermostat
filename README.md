@@ -12,8 +12,8 @@ Imagine the following curve repeats infinitely (each A is the same as the last):
 
 ```
 1         C---D
-         /    |
-0   A---B     A---
+         /     \
+0   A---B       A'--
 ```
 
 If you query a random point on this curve, it should give you a value between
