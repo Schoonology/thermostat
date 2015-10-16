@@ -30,13 +30,13 @@ test('thermostat.lerp(p1, p2, x)', function (suite) {
     t.end()
   })
 
-  suite.test('throws if p1.x === p2.x && p1.y !== p2.y', function (t) {
-    t.throws(thermostat.lerp.bind(
+  suite.test('returns NaN if p1.x === p2.x && p1.y !== p2.y', function (t) {
+    t.ok(isNaN(thermostat.lerp.bind(
       null,
       { x: 1, y: 1 },
       { x: 1, y: 2 },
       1
-    ))
+    )))
     t.end()
   })
 
